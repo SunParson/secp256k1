@@ -15,7 +15,6 @@ cc_library(
     "include/secp256k1_schnorrsig.h",
     "src/assumptions.h",
     'src/util.h',
-    'src/libsecp256k1-config.h',
     'src/field_impl.h',
     'src/field_5x52_impl.h',
     'src/field.h',
@@ -46,6 +45,7 @@ cc_library(
     'src/eckey.h',
     'src/scratch_impl.h',
     'src/selftest.h',
+    "src/libsecp256k1-config.h",
   ],
   copts = [
     "-DHAVE_CONFIG_H",
