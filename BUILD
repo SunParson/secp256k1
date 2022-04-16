@@ -50,8 +50,17 @@ cc_library(
     "src/libsecp256k1-config.h",
     "src/ecmult_gen_compute_table_impl.h",
     "src/ecmult_gen_compute_table.h",
+    
+    'src/modules/ecdh/main_impl.h',
+    'src/modules/recovery/main_impl.h',
+    'src/modules/extrakeys/main_impl.h',
+    'src/modules/schnorrsig/main_impl.h',
   ],
   copts = [
     "-DHAVE_CONFIG_H",
+    "-DENABLE_MODULE_ECDH",
+    "-DENABLE_MODULE_RECOVERY",
+    "-DENABLE_MODULE_EXTRAKEYS",
+    "-DENABLE_MODULE_SCHNORRSIG",
   ],
 );
