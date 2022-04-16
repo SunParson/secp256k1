@@ -5,6 +5,7 @@ cc_library(
   name = "libsecp256k1",
   srcs = [
     "src/secp256k1.c",
+    "src/precompute_ecmult_gen.c",
   ],
   hdrs = [
     "include/secp256k1_ecdh.h",
@@ -46,6 +47,8 @@ cc_library(
     'src/scratch_impl.h',
     'src/selftest.h',
     "src/libsecp256k1-config.h",
+    "src/ecmult_gen_compute_table_impl.h",
+    "src/ecmult_gen_compute_table.h",
   ],
   copts = [
     "-DHAVE_CONFIG_H",
