@@ -6,6 +6,7 @@ cc_library(
   srcs = [
     "src/secp256k1.c",
     "src/precomputed_ecmult_gen.c",
+    "src/precomputed_ecmult.c",
   ],
   hdrs = [
     "include/secp256k1_ecdh.h",
